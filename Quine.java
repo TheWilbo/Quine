@@ -4,7 +4,6 @@ import java.io.IOException;
 public class Quine
 {
     public static void main(String[] args) throws IOException{
-        int rand = (int)(Math.random()*100);
         String[] l = {
 "import java.io.File;",
 "import java.io.FileWriter;",
@@ -12,7 +11,7 @@ public class Quine
 "public class Quine" + 1,
 "{",
 "    public static void main(String[] args) throws IOException{",
-"        int rand = (int)(Math.random()*100);",
+
 "        String[] l = {",
 "        ",
 "        };",
@@ -34,7 +33,7 @@ public class Quine
 "        //adder--;",
 "        l[3] = l[3].substring(0,18)+adder;",
 
-"        for(int i = 0; i < 8; i++){",
+"        for(int i = 0; i < 7; i++){",
 "            wrute.write(l[i] + cr + lf);",
 "        }",
 
@@ -42,9 +41,9 @@ public class Quine
 "        //String discrimS = new String(discrim);",
 "        //l[3] = l[3].substring(0,18) + discrimS;",
 "        for(int i = 0; i < l.length; i++){",
-"            wrute.write(l[8] + quote + l[i] + quote + comma + cr + lf);",
+"            wrute.write(l[7] + quote + l[i] + quote + comma + cr + lf);",
 "        }",
-"        for (int i = 9; i < l.length; i++)    // Print this code",
+"        for (int i = 8; i < l.length; i++)    // Print this code",
 "            wrute.write(l[i] + cr + lf);",
 "        wrute.close();",
 "    }",
@@ -67,7 +66,7 @@ public class Quine
         FileWriter wrute = new FileWriter(quineS + adder + javaS);
         //adder--;
         l[3] = l[3].substring(0,18)+adder;
-        for(int i = 0; i < 8; i++){
+        for(int i = 0; i < 7; i++){
             wrute.write(l[i] + cr + lf);
         }
         
@@ -75,9 +74,9 @@ public class Quine
         // String discrimS = new String(discrim);
         // l[3] = l[3].substring(0,18) + discrimS;
         for(int i = 0; i < l.length; i++){
-            wrute.write(l[8] + quote + l[i] + quote + comma + cr + lf);
+            wrute.write(l[7] + quote + l[i] + quote + comma + cr + lf);
         }
-        for (int i = 9; i < l.length; i++)    // Print this code
+        for (int i = 8; i < l.length; i++)    // Print this code
             wrute.write(l[i] + cr + lf);
         wrute.close();
     }
